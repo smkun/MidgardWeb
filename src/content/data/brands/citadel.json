@@ -1,0 +1,7 @@
+{
+  "name": "Citadel",
+  "category": "paint",
+  "productLines": ["Base", "Layer", "Shade", "Technical", "Contrast"],
+  "description": "Games Workshop's official Warhammer paint line",
+  "featured": true
+}

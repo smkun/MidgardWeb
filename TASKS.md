@@ -27,10 +27,10 @@
 - [ ] Download Wix media library images – **Completed**: \***\*\_\_\_\*\***
 - [x] Organize images into /content-export/images/ – **Completed**: 2025-10-06
 - [x] Audit image resolutions (flag <1600px) – **Completed**: 2025-10-06
-- [ ] Extract current site color palette – **Completed**: ****\_\_\_****
-- [ ] Identify current site fonts – **Completed**: ****\_\_\_****
-- [ ] Document current NAP consistency – **Completed**: ****\_\_\_****
-- [ ] Export Facebook page URL and metadata – **Completed**: ****\_\_\_****
+- [ ] Extract current site color palette – **Completed**: \***\*\_\_\_\*\***
+- [ ] Identify current site fonts – **Completed**: \***\*\_\_\_\*\***
+- [ ] Document current NAP consistency – **Completed**: \***\*\_\_\_\*\***
+- [ ] Export Facebook page URL and metadata – **Completed**: \***\*\_\_\_\*\***
 
 ### Design System
 
@@ -38,15 +38,15 @@
 - [x] Add custom font definitions to Tailwind – **Completed**: 2025-10-06
 - [x] Create global.css with base styles – **Completed**: 2025-10-06
 - [x] Define responsive breakpoint strategy – **Completed**: 2025-10-06
-- [ ] Create color palette CSS variables – **Completed**: ****\_\_\_****
-- [ ] Set up spacing scale in Tailwind config – **Completed**: ****\_\_\_****
+- [ ] Create color palette CSS variables – **Completed**: \***\*\_\_\_\*\***
+- [ ] Set up spacing scale in Tailwind config – **Completed**: \***\*\_\_\_\*\***
 
 ### Core Layout Components
 
 - [x] Create BaseLayout.astro with HTML shell – **Completed**: 2025-10-06
 - [x] Build Header.astro with navigation – **Completed**: 2025-10-06
 - [x] Build Footer.astro with NAP info – **Completed**: 2025-10-06
-- [ ] Implement mobile menu toggle – **Completed**: ****\_\_\_****
+- [ ] Implement mobile menu toggle – **Completed**: \***\*\_\_\_\*\***
 - [x] Add logo SVG to public/images/ – **Completed**: 2025-10-06
 - [x] Create favicon.svg and configure – **Completed**: 2025-10-06
 - [ ] Add logo SVG to public/images/ – **Completed**: \***\*\_\_\_\*\***
@@ -54,19 +54,19 @@
 
 ### Content Collections Setup
 
-- [ ] Define content collections schema in config.ts – **Completed**: \***\*\_\_\_\*\***
-- [ ] Create pages collection type definitions – **Completed**: \***\*\_\_\_\*\***
-- [ ] Create data collection for hours.json – **Completed**: \***\*\_\_\_\*\***
-- [ ] Create data collection for team.json – **Completed**: \***\*\_\_\_\*\***
-- [ ] Create data collection for brands.json – **Completed**: \***\*\_\_\_\*\***
+- [x] Define content collections schema in config.ts – **Completed**: 2025-10-06
+- [x] Create pages collection type definitions – **Completed**: 2025-10-06
+- [x] Create data collection for hours.json – **Completed**: 2025-10-06
+- [x] Create data collection for team.json – **Completed**: 2025-10-06
+- [x] Create data collection for brands.json – **Completed**: 2025-10-06
 
 ### Static CMS Evaluation
 
-- [ ] Install Static CMS package – **Completed**: \***\*\_\_\_\*\***
-- [ ] Configure admin/config.yml – **Completed**: \***\*\_\_\_\*\***
-- [ ] Create test hours.json edit workflow – **Completed**: \***\*\_\_\_\*\***
-- [ ] Demo CMS to Jason/Scott – **Completed**: \***\*\_\_\_\*\***
-- [ ] Document CMS decision (adopt or defer) – **Completed**: \***\*\_\_\_\*\***
+- [x] Install Static CMS package – **Completed**: 2025-10-06
+- [x] Configure admin/config.yml – **Completed**: 2025-10-06
+- [x] Create test hours.json edit workflow – **Completed**: 2025-10-06
+- [x] Demo CMS to Jason/Scott – **Completed**: 2025-10-06
+- [x] Document CMS decision (adopt or defer) – **Completed**: 2025-10-06
 
 ---
 
