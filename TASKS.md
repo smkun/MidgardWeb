@@ -25,28 +25,30 @@
 
 - [ ] Export all text content from Wix pages – **Completed**: \***\*\_\_\_\*\***
 - [ ] Download Wix media library images – **Completed**: \***\*\_\_\_\*\***
-- [ ] Organize images into /content-export/images/ – **Completed**: \***\*\_\_\_\*\***
-- [ ] Audit image resolutions (flag <1600px) – **Completed**: \***\*\_\_\_\*\***
-- [ ] Extract current site color palette – **Completed**: \***\*\_\_\_\*\***
-- [ ] Identify current site fonts – **Completed**: \***\*\_\_\_\*\***
-- [ ] Document current NAP consistency – **Completed**: \***\*\_\_\_\*\***
-- [ ] Export Facebook page URL and metadata – **Completed**: \***\*\_\_\_\*\***
+- [x] Organize images into /content-export/images/ – **Completed**: 2025-10-06
+- [x] Audit image resolutions (flag <1600px) – **Completed**: 2025-10-06
+- [ ] Extract current site color palette – **Completed**: ****\_\_\_****
+- [ ] Identify current site fonts – **Completed**: ****\_\_\_****
+- [ ] Document current NAP consistency – **Completed**: ****\_\_\_****
+- [ ] Export Facebook page URL and metadata – **Completed**: ****\_\_\_****
 
 ### Design System
 
-- [ ] Configure Tailwind theme with brand colors – **Completed**: \***\*\_\_\_\*\***
-- [ ] Add custom font definitions to Tailwind – **Completed**: \***\*\_\_\_\*\***
-- [ ] Create global.css with base styles – **Completed**: \***\*\_\_\_\*\***
-- [ ] Define responsive breakpoint strategy – **Completed**: \***\*\_\_\_\*\***
-- [ ] Create color palette CSS variables – **Completed**: \***\*\_\_\_\*\***
-- [ ] Set up spacing scale in Tailwind config – **Completed**: \***\*\_\_\_\*\***
+- [x] Configure Tailwind theme with brand colors – **Completed**: 2025-10-06
+- [x] Add custom font definitions to Tailwind – **Completed**: 2025-10-06
+- [x] Create global.css with base styles – **Completed**: 2025-10-06
+- [x] Define responsive breakpoint strategy – **Completed**: 2025-10-06
+- [ ] Create color palette CSS variables – **Completed**: ****\_\_\_****
+- [ ] Set up spacing scale in Tailwind config – **Completed**: ****\_\_\_****
 
 ### Core Layout Components
 
-- [ ] Create BaseLayout.astro with HTML shell – **Completed**: \***\*\_\_\_\*\***
-- [ ] Build Header.astro with navigation – **Completed**: \***\*\_\_\_\*\***
-- [ ] Build Footer.astro with NAP info – **Completed**: \***\*\_\_\_\*\***
-- [ ] Implement mobile menu toggle – **Completed**: \***\*\_\_\_\*\***
+- [x] Create BaseLayout.astro with HTML shell – **Completed**: 2025-10-06
+- [x] Build Header.astro with navigation – **Completed**: 2025-10-06
+- [x] Build Footer.astro with NAP info – **Completed**: 2025-10-06
+- [ ] Implement mobile menu toggle – **Completed**: ****\_\_\_****
+- [x] Add logo SVG to public/images/ – **Completed**: 2025-10-06
+- [x] Create favicon.svg and configure – **Completed**: 2025-10-06
 - [ ] Add logo SVG to public/images/ – **Completed**: \***\*\_\_\_\*\***
 - [ ] Create favicon.svg and configure – **Completed**: \***\*\_\_\_\*\***
 

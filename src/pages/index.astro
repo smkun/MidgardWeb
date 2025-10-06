@@ -1,19 +1,37 @@
 ---
-// Temporary homepage placeholder
-// Will be replaced with proper content from PRD
+import BaseLayout from '../components/layout/BaseLayout.astro';
+import Header from '../components/layout/Header.astro';
+import Footer from '../components/layout/Footer.astro';
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Midgard Hobbies & Games - Coming Soon</title>
-  </head>
-  <body>
-    <main>
-      <h1>Midgard Hobbies & Games</h1>
-      <p>Website rebuild in progress...</p>
-    </main>
-  </body>
-</html>
+<BaseLayout title="Midgard Hobbies & Games - Derry, NH Game Store">
+  <Header />
+  <main>
+    <div class="container-custom py-16">
+      <div class="text-center">
+        <h1 class="text-5xl md:text-6xl font-heading font-bold text-brand-primary mb-6">
+          Welcome to Midgard Hobbies & Games
+        </h1>
+        <p class="text-xl md:text-2xl text-brand-gray-600 max-w-3xl mx-auto mb-8">
+          Your local game store in Derry, NH for miniatures, RPGs, TCGs, hobby supplies, and gaming
+          space.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/games" class="btn-primary"> Explore Games </a>
+          <a href="/contact" class="btn-outline"> Visit Our Store </a>
+        </div>
+      </div>
+
+      <!-- Temporary content notice -->
+      <div
+        class="mt-16 p-6 bg-brand-accent bg-opacity-10 rounded-lg border-l-4 border-brand-accent"
+      >
+        <p class="text-brand-dark">
+          <strong>Website under construction:</strong> Content migration from Wix in progress. Check
+          back soon for our complete catalog and events calendar!
+        </p>
+      </div>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

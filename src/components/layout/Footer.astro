@@ -1,0 +1,132 @@
+---
+// NAP (Name, Address, Phone) data from PRD.md
+const businessInfo = {
+  name: 'Midgard Hobbies & Games',
+  address: {
+    street: '1 Crystal Ave, Unit 2',
+    city: 'Derry',
+    state: 'NH',
+    zip: '03038',
+  },
+  phone: '(603) 432-6063',
+  email: 'info@midgardcomicsandgames.com',
+  facebook: 'https://facebook.com/midgardhobbiesandgames',
+};
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-brand-dark text-brand-light">
+  <div class="container-custom py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Business Info -->
+      <div>
+        <h3 class="text-xl font-heading font-bold mb-4 text-brand-accent">
+          {businessInfo.name}
+        </h3>
+        <address class="not-italic space-y-2 text-brand-gray-300">
+          <p>{businessInfo.address.street}</p>
+          <p>
+            {businessInfo.address.city}, {businessInfo.address.state}{' '}
+            {businessInfo.address.zip}
+          </p>
+          <p>
+            <a
+              href={`tel:${businessInfo.phone.replace(/\D/g, '')}`}
+              class="hover:text-brand-secondary transition-colors"
+            >
+              {businessInfo.phone}
+            </a>
+          </p>
+          <p>
+            <a
+              href={`mailto:${businessInfo.email}`}
+              class="hover:text-brand-secondary transition-colors"
+            >
+              {businessInfo.email}
+            </a>
+          </p>
+        </address>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-xl font-heading font-bold mb-4 text-brand-accent">Quick Links</h3>
+        <ul class="space-y-2 text-brand-gray-300">
+          <li>
+            <a href="/games" class="hover:text-brand-secondary transition-colors"> Games </a>
+          </li>
+          <li>
+            <a href="/hobby-supplies" class="hover:text-brand-secondary transition-colors">
+              Hobby Supplies
+            </a>
+          </li>
+          <li>
+            <a href="/events" class="hover:text-brand-secondary transition-colors">
+              Events Calendar
+            </a>
+          </li>
+          <li>
+            <a href="/contact" class="hover:text-brand-secondary transition-colors"> Contact Us </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Connect -->
+      <div>
+        <h3 class="text-xl font-heading font-bold mb-4 text-brand-accent">Connect</h3>
+        <div class="space-y-4">
+          <a
+            href={businessInfo.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 text-brand-gray-300 hover:text-brand-secondary transition-colors"
+          >
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+              ></path>
+            </svg>
+            <span>Follow us on Facebook</span>
+          </a>
+          <div class="mt-4">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Midgard+Hobbies+and+Games+Derry+NH"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 px-4 py-2 bg-brand-secondary text-white rounded hover:bg-opacity-90 transition-all"
+            >
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                ></path>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Get Directions</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="mt-8 pt-8 border-t border-brand-gray-700 text-center text-brand-gray-400 text-sm">
+      <p>
+        &copy; {currentYear}
+        {businessInfo.name}. All rights reserved.
+      </p>
+      <p class="mt-2">
+        <a href="/legal/privacy" class="hover:text-brand-secondary transition-colors">
+          Privacy Policy
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>

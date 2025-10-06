@@ -1,0 +1,92 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply font-sans text-brand-primary bg-brand-light antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-secondary;
+  }
+
+  /* Link styles */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  a:hover {
+    @apply text-brand-secondary;
+  }
+}
+
+/* Component layer for reusable patterns */
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 font-medium rounded-md transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply btn bg-brand-secondary text-white hover:bg-opacity-90 focus:ring-2 focus:ring-brand-secondary focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply btn bg-brand-accent text-white hover:bg-opacity-90 focus:ring-2 focus:ring-brand-accent focus:ring-offset-2;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-brand-primary text-brand-primary hover:bg-brand-primary hover:text-white;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 transition-shadow duration-200 hover:shadow-lg;
+  }
+}
+
+/* Utility layer for custom utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}
