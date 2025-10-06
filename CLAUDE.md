@@ -425,4 +425,60 @@ Updated TASKS.md: Marked "Create BaseLayout.astro" complete (2025-10-06)
 
 ---
 
+### 2025-10-06 – Foundation implementation and initial development
+
+**Milestone**: Week 1 – Foundation & Setup
+**Tasks completed**: 30 tasks (14% of total project)
+**Time estimate**: ~3 hours
+
+**Completed**:
+
+- Initialized Astro 4.16.19 project with TypeScript strict mode ([astro.config.mjs](astro.config.mjs), [tsconfig.json](tsconfig.json))
+- Configured development tools:
+  - ESLint 9.12 with flat config ([eslint.config.js](eslint.config.js)) - Astro, TypeScript, jsx-a11y plugins
+  - Prettier 3.3.3 with Astro formatting ([.prettierrc.json](.prettierrc.json), [.prettierignore](.prettierignore))
+  - Husky 9.1.6 pre-commit hooks with lint-staged ([.husky/pre-commit](.husky/pre-commit))
+- Connected GitHub repository: https://github.com/smkun/MidgardWeb
+- Deployed to Vercel with auto-deployment on push
+- Implemented design system:
+  - Tailwind config with brand colors (#1a1a1a primary, #e63946 accent, #f77f00 orange) ([tailwind.config.js](tailwind.config.js))
+  - Global styles with component patterns ([src/styles/global.css](src/styles/global.css))
+  - Responsive breakpoint strategy (sm/md/lg/xl/2xl)
+- Created core layout components:
+  - [BaseLayout.astro](src/components/layout/BaseLayout.astro) - HTML shell with SEO meta tags
+  - [Header.astro](src/components/layout/Header.astro) - Responsive navigation with mobile menu toggle
+  - [Footer.astro](src/components/layout/Footer.astro) - NAP info, social links, quick navigation
+- Built content collections with Zod validation ([src/content/config.ts](src/content/config.ts)):
+  - Pages collection (markdown with frontmatter schema)
+  - Hours collection (7 JSON files for each day)
+  - Team collection (4 members: Jason, Scott, Maria, Shawn)
+  - Brands collection (4 hobby supply brands)
+- Organized 19 images into [src/assets/images/](src/assets/images/) (logo + 18 HDR store photos)
+- Created [favicon.svg](public/favicon.svg) with Midgard "M" branding
+- Updated homepage with new layout system ([src/pages/index.astro](src/pages/index.astro))
+
+**Discovered tasks**:
+
+- Review npm audit vulnerabilities (7 moderate severity) - added to Week 1 Discoveries
+- Consider Astro 5.14.1 upgrade when stable - added to Week 1 Discoveries
+- Image optimization critical (files are 9-15MB each) - documented in [IMAGE_AUDIT.md](IMAGE_AUDIT.md)
+
+**Blockers/Questions**:
+
+- None
+
+**Risks/Issues**:
+
+- **Image size**: All photos are 9-15MB (too large for web). Will rely on Astro's built-in image optimization at build time. Target: <500KB per optimized image.
+- **Static CMS**: Installation timed out. Decision documented in [CMS_DECISION.md](CMS_DECISION.md) - deferred in favor of direct file editing workflow. Can revisit after 3 months if content update frequency increases.
+- **Dev servers**: Two background processes running (ports 4321-4323). Should clean up inactive servers.
+
+**Next session start** (Top 3 Tasks):
+
+1. Create SEOHead.astro component with meta tags and Open Graph
+2. Create SchemaMarkup.astro component with LocalBusiness JSON-LD
+3. Generate robots.txt and configure sitemap.xml generation
+
+---
+
 **Note**: Update this Session Log at end of every session. Keep entries chronological (newest at bottom).
