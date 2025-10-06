@@ -15,9 +15,9 @@
 - [x] Install Tailwind CSS integration – **Completed**: 2025-10-06
 - [x] Install React integration for islands – **Completed**: 2025-10-06
 - [x] Configure TypeScript for strict mode – **Completed**: 2025-10-06
-- [ ] Set up ESLint with Astro plugin – **Completed**: \***\*\_\_\_\*\***
-- [ ] Set up Prettier with Astro formatting – **Completed**: \***\*\_\_\_\*\***
-- [ ] Configure Husky pre-commit hooks – **Completed**: \***\*\_\_\_\*\***
+- [x] Set up ESLint with Astro plugin – **Completed**: 2025-10-06
+- [x] Set up Prettier with Astro formatting – **Completed**: 2025-10-06
+- [x] Configure Husky pre-commit hooks – **Completed**: 2025-10-06
 - [ ] Connect GitHub repository to Vercel – **Completed**: \***\*\_\_\_\*\***
 - [ ] Deploy initial preview to Vercel – **Completed**: \***\*\_\_\_\*\***
 
