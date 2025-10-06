@@ -14,6 +14,7 @@
 **Voice**: Brief, specific, cites file paths
 
 **Defaults**:
+
 - TypeScript (strict mode)
 - Astro 4.x for SSG with React islands
 - Tailwind CSS for styling
@@ -49,12 +50,14 @@
 ## Task Handling Protocol
 
 ### Task Selection
+
 - **Priority order**: Follow milestone sequence (Week 1 → Week 2 → Week 3 → Week 4)
 - **Within milestone**: Top-to-bottom unless dependencies require reordering
 - **Blocked tasks**: Skip and document blocker in "Newly Discovered Tasks"
 - **User requests**: Override priority for explicit user directives
 
 ### Task Execution
+
 1. **Before starting**:
    - Confirm task is atomic (single verb, single outcome)
    - Verify prerequisites are completed
@@ -73,19 +76,21 @@
    - Add any follow-up tasks to "Newly Discovered Tasks"
 
 ### Task Completion Example
+
 ```diff
 - - [ ] Create BaseLayout.astro with HTML shell – **Completed**: ___________
 + - [x] Create BaseLayout.astro with HTML shell – **Completed**: 2025-10-06
 ```
 
 ### Adding New Tasks
+
 When work uncovers additional requirements:
 
 1. Add to "Newly Discovered Tasks" section in [TASKS.md](TASKS.md)
 2. Use format: `- [ ] [Task description] – **Reason**: [one-line justification] – **Completed**: ___________`
 3. Example:
    ```markdown
-   - [ ] Add loading spinner to ContactForm – **Reason**: Form submission takes 2-3s, UX requires feedback – **Completed**: ___________
+   - [ ] Add loading spinner to ContactForm – **Reason**: Form submission takes 2-3s, UX requires feedback – **Completed**: \***\*\_\_\_\*\***
    ```
 
 ---
@@ -93,18 +98,21 @@ When work uncovers additional requirements:
 ## File Discipline Rules
 
 ### Before Writing Files
+
 - **ALWAYS** use `Read` tool to check existing content first
 - **NEVER** recreate files from scratch if they exist
 - Use `Edit` tool for modifications, not `Write` (unless creating new file)
 - Run `git diff` to preview changes before committing
 
 ### Scoping Changes
+
 - **Current task only**: Don't fix unrelated issues in same file
 - **Surgical edits**: Change minimal lines to complete task
 - **No refactoring**: Unless task explicitly requires it
 - **No style changes**: Unless task is style/formatting related
 
 ### File Organization
+
 - Follow structure in [PLANNING.md](PLANNING.md) → "Component Structure" section
 - Place components in correct directories:
   - Layout: `/src/components/layout/`
@@ -114,7 +122,9 @@ When work uncovers additional requirements:
 - Content files: `/src/content/pages/` (markdown) or `/src/content/data/` (JSON)
 
 ### Verification Steps
+
 After file operations:
+
 1. Confirm file exists: `ls [path]`
 2. Validate syntax: Run appropriate linter/type checker
 3. Test in dev server if applicable: `npm run dev`
@@ -124,6 +134,7 @@ After file operations:
 ## Git Commit Protocol
 
 ### Commit Message Format
+
 ```
 [Short subject line ≤50 chars]
 
@@ -132,6 +143,7 @@ Reference: [TASKS.md task description or line number]
 ```
 
 ### Commit Message Examples
+
 ```
 Add BaseLayout with HTML shell and meta tags
 
@@ -147,11 +159,13 @@ Reference: TASKS.md Milestone 1 - Design System
 ```
 
 ### Commit Timing
+
 - **After each completed task**: One task = one commit (unless task is trivial)
 - **Logical groupings**: Related micro-tasks can be combined (e.g., "Install dependencies")
 - **Before breaks**: Commit work-in-progress with `[WIP]` prefix if leaving mid-task
 
 ### What NOT to Commit
+
 - `node_modules/`
 - `.env` or `.env.local`
 - `/dist/` build output
@@ -163,6 +177,7 @@ Reference: TASKS.md Milestone 1 - Design System
 ## Safety Rails & Decision Gates
 
 ### Before Adding Libraries
+
 **MUST ask user first** with this format:
 
 ```
@@ -187,6 +202,7 @@ Proceed with Option 1/2, or suggest alternative?
 ```
 
 ### Example Library Decision
+
 ```
 📦 Library Decision Required
 
@@ -209,13 +225,16 @@ Proceed with Option 2, or prefer Swiper for richer UX?
 ```
 
 ### Architecture Changes
+
 **Ask before**:
+
 - Changing folder structure from [PLANNING.md](PLANNING.md)
 - Adding new component categories
 - Modifying data flow patterns
 - Changing build/deployment configuration
 
 **Present**:
+
 - Current architecture excerpt from [PLANNING.md](PLANNING.md)
 - Proposed change with rationale
 - Impact on other components/files
@@ -239,6 +258,7 @@ Proceed with Option 2, or prefer Swiper for richer UX?
 3. **Append Session Summary** to this file (see "Session Log" below)
 
 ### Session Summary Template
+
 ```markdown
 ### YYYY-MM-DD – [Brief session description]
 
@@ -247,16 +267,20 @@ Proceed with Option 2, or prefer Swiper for richer UX?
 **Time estimate**: N hours
 
 **Completed**:
+
 - [Task 1 with file reference]
 - [Task 2 with file reference]
 
 **Discovered tasks**:
+
 - [New task added to TASKS.md with reason]
 
 **Blockers/Questions**:
+
 - [Any issues requiring user input or decisions]
 
 **Next session start**:
+
 - [First task to tackle next time]
 ```
 
@@ -265,14 +289,18 @@ Proceed with Option 2, or prefer Swiper for richer UX?
 ## Performance & Accessibility Guardrails
 
 ### Performance Checks
+
 Before marking these tasks complete:
+
 - **Image optimization**: Verify WebP/AVIF generation, srcset present
 - **Lazy loading**: Below-the-fold images have `loading="lazy"`
 - **JavaScript**: Minimize hydration, prefer Astro components over React
 - **Lighthouse audit**: Run `npm run build && npx serve dist` → test with Lighthouse
 
 ### Accessibility Checks
+
 Before marking component tasks complete:
+
 - **Semantic HTML**: Use `<nav>`, `<main>`, `<article>`, not `<div>` everywhere
 - **Alt text**: All `<img>` tags have descriptive alt (≤125 chars)
 - **Keyboard navigation**: Interactive elements are focusable, focus visible
@@ -280,6 +308,7 @@ Before marking component tasks complete:
 - **ARIA**: Only use when semantic HTML insufficient (avoid over-labeling)
 
 ### Testing Commands
+
 ```bash
 # Type checking
 npm run astro check
@@ -305,12 +334,14 @@ npm run preview
 ## Quick Reference
 
 ### Project Files
+
 - [PRD.md](PRD.md) – Product requirements
 - [PLANNING.md](PLANNING.md) – Technical architecture and decisions
 - [TASKS.md](TASKS.md) – Implementation task tracker
 - [CLAUDE.md](CLAUDE.md) – This file (behavioral rules)
 
 ### Key Commands
+
 ```bash
 # Install dependencies
 npm install
@@ -329,6 +360,7 @@ npx astro add [integration-name]
 ```
 
 ### File Path Patterns
+
 - Components: `/src/components/[category]/[ComponentName].astro`
 - React islands: `/src/components/ui/[ComponentName].tsx`
 - Pages: `/src/pages/[page-name].astro`
@@ -337,7 +369,9 @@ npx astro add [integration-name]
 - Images: `/src/assets/images/midgard-[slug]-NN.webp`
 
 ### Response Format
+
 When completing tasks:
+
 1. State task being executed
 2. Show relevant code/file changes
 3. Cite file paths: `[filename.ext](path/to/filename.ext)`
@@ -345,6 +379,7 @@ When completing tasks:
 5. Update [TASKS.md](TASKS.md) checkbox
 
 Example:
+
 ```
 Completed: Create BaseLayout.astro with HTML shell
 
@@ -369,18 +404,22 @@ Updated TASKS.md: Marked "Create BaseLayout.astro" complete (2025-10-06)
 **Time estimate**: 1 hour
 
 **Completed**:
+
 - Created [PRD.md](PRD.md) – Product requirements document (read-only, user provided)
 - Created [PLANNING.md](PLANNING.md) – Technical architecture, stack decisions, component structure, risks
 - Created [TASKS.md](TASKS.md) – 211 atomic tasks across 4 weekly milestones
 - Created [CLAUDE.md](CLAUDE.md) – Behavioral rules and session protocols
 
 **Discovered tasks**:
+
 - None yet (implementation starts next session)
 
 **Blockers/Questions**:
+
 - None
 
 **Next session start**:
+
 - Initialize Astro project with TypeScript template
 - Follow "Next 5 tasks to run" in [TASKS.md](TASKS.md)
 

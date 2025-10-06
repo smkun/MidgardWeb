@@ -1,0 +1,17 @@
+# Build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Cache
+.cache/
+
+# Logs
+*.log
+
+# Lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
