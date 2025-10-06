@@ -18,8 +18,8 @@
 - [x] Set up ESLint with Astro plugin – **Completed**: 2025-10-06
 - [x] Set up Prettier with Astro formatting – **Completed**: 2025-10-06
 - [x] Configure Husky pre-commit hooks – **Completed**: 2025-10-06
-- [ ] Connect GitHub repository to Vercel – **Completed**: \***\*\_\_\_\*\***
-- [ ] Deploy initial preview to Vercel – **Completed**: \***\*\_\_\_\*\***
+- [x] Connect GitHub repository to Vercel – **Completed**: 2025-10-06
+- [x] Deploy initial preview to Vercel – **Completed**: 2025-10-06
 
 ### Content Export
 
