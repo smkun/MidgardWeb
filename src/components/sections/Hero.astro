@@ -1,0 +1,46 @@
+---
+// Hero section for homepage with call-to-action
+interface Props {
+  title: string;
+  subtitle: string;
+  primaryCTA?: {
+    text: string;
+    href: string;
+  };
+  secondaryCTA?: {
+    text: string;
+    href: string;
+  };
+}
+
+const { title, subtitle, primaryCTA, secondaryCTA } = Astro.props;
+---
+
+<section class="bg-gradient-to-b from-brand-light to-white py-16 md:py-24">
+  <div class="container-custom">
+    <div class="text-center">
+      <h1 class="text-5xl md:text-6xl font-heading font-bold text-brand-primary mb-6">
+        {title}
+      </h1>
+      <p class="text-xl md:text-2xl text-brand-gray-600 max-w-3xl mx-auto mb-8">
+        {subtitle}
+      </p>
+      {
+        (primaryCTA || secondaryCTA) && (
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            {primaryCTA && (
+              <a href={primaryCTA.href} class="btn-primary">
+                {primaryCTA.text}
+              </a>
+            )}
+            {secondaryCTA && (
+              <a href={secondaryCTA.href} class="btn-outline">
+                {secondaryCTA.text}
+              </a>
+            )}
+          </div>
+        )
+      }
+    </div>
+  </div>
+</section>

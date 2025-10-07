@@ -74,26 +74,26 @@
 
 ### SEO Foundation
 
-- [ ] Create SEOHead.astro component – **Completed**: \***\*\_\_\_\*\***
-- [ ] Create SchemaMarkup.astro component – **Completed**: \***\*\_\_\_\*\***
-- [ ] Implement LocalBusiness schema – **Completed**: \***\*\_\_\_\*\***
-- [ ] Add Open Graph meta tags – **Completed**: \***\*\_\_\_\*\***
-- [ ] Add Twitter Card meta tags – **Completed**: \***\*\_\_\_\*\***
-- [ ] Generate robots.txt – **Completed**: \***\*\_\_\_\*\***
-- [ ] Configure sitemap.xml generation – **Completed**: \***\*\_\_\_\*\***
+- [x] Create SEOHead.astro component – **Completed**: \***\*\_\_\_\*\***
+- [x] Create SchemaMarkup.astro component – **Completed**: \***\*\_\_\_\*\***
+- [x] Implement LocalBusiness schema – **Completed**: \***\*\_\_\_\*\***
+- [x] Add Open Graph meta tags – **Completed**: \***\*\_\_\_\*\***
+- [x] Add Twitter Card meta tags – **Completed**: \***\*\_\_\_\*\***
+- [x] Generate robots.txt – **Completed**: \***\*\_\_\_\*\***
+- [x] Configure sitemap.xml generation – **Completed**: \***\*\_\_\_\*\***
 
 ### Home Page (/)
 
-- [ ] Create /src/pages/index.astro – **Completed**: \***\*\_\_\_\*\***
-- [ ] Write home.md content file – **Completed**: \***\*\_\_\_\*\***
-- [ ] Build Hero.astro section component – **Completed**: \***\*\_\_\_\*\***
-- [ ] Build HoursTable.astro component – **Completed**: \***\*\_\_\_\*\***
-- [ ] Populate hours.json with store hours – **Completed**: \***\*\_\_\_\*\***
-- [ ] Add Google Maps directions link – **Completed**: \***\*\_\_\_\*\***
-- [ ] Build ImageGallery.tsx React component – **Completed**: \***\*\_\_\_\*\***
-- [ ] Integrate 6-12 curated images – **Completed**: \***\*\_\_\_\*\***
-- [ ] Add optional Facebook timeline embed – **Completed**: \***\*\_\_\_\*\***
-- [ ] Test home page in all breakpoints – **Completed**: \***\*\_\_\_\*\***
+- [x] Create /src/pages/index.astro – **Completed**: \***\*\_\_\_\*\***
+- [x] Write home.md content file – **Completed**: \***\*\_\_\_\*\***
+- [x] Build Hero.astro section component – **Completed**: \***\*\_\_\_\*\***
+- [x] Build HoursTable.astro component – **Completed**: \***\*\_\_\_\*\***
+- [x] Populate hours.json with store hours – **Completed**: \***\*\_\_\_\*\***
+- [x] Add Google Maps directions link – **Completed**: \***\*\_\_\_\*\***
+- [x] Build ImageGallery.tsx React component – **Completed**: \***\*\_\_\_\*\***
+- [x] Integrate 6-12 curated images – **Completed**: \***\*\_\_\_\*\***
+- [x] Add optional Facebook timeline embed – **Completed**: \***\*\_\_\_\*\***
+- [x] Test home page in all breakpoints – **Completed**: \***\*\_\_\_\*\***
 
 ### Games Page (/games)
 

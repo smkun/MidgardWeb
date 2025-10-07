@@ -1,0 +1,55 @@
+---
+import { getCollection } from 'astro:content';
+
+// Fetch all hours data from content collection
+const hoursEntries = await getCollection('hours');
+
+// Sort by day of week (Monday=1, Sunday=7)
+const dayOrder: Record<string, number> = {
+  Monday: 1,
+  Tuesday: 2,
+  Wednesday: 3,
+  Thursday: 4,
+  Friday: 5,
+  Saturday: 6,
+  Sunday: 7,
+};
+
+const sortedHours = hoursEntries.sort(
+  (a, b) => dayOrder[a.data.dayOfWeek]! - dayOrder[b.data.dayOfWeek]!
+);
+
+// Format time display
+function formatHours(entry: (typeof hoursEntries)[0]) {
+  if (entry.data.isClosed) {
+    return 'Closed';
+  }
+  return `${entry.data.openTime} – ${entry.data.closeTime}`;
+}
+---
+
+<section class="py-12 bg-white">
+  <div class="container-custom">
+    <h2 class="text-3xl font-heading font-bold text-brand-primary text-center mb-8">Store Hours</h2>
+    <div class="max-w-2xl mx-auto">
+      <table class="w-full border-collapse">
+        <thead>
+          <tr class="border-b-2 border-brand-gray-300">
+            <th class="text-left py-3 px-4 font-semibold text-brand-primary">Day</th>
+            <th class="text-right py-3 px-4 font-semibold text-brand-primary">Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            sortedHours.map((entry) => (
+              <tr class="border-b border-brand-gray-200 hover:bg-brand-gray-50 transition-colors">
+                <td class="py-3 px-4 text-brand-dark">{entry.data.dayOfWeek}</td>
+                <td class="py-3 px-4 text-right text-brand-gray-600">{formatHours(entry)}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

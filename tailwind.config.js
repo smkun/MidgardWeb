@@ -4,13 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Brand colors extracted from Midgard branding
+        // Brand colors extracted from Midgard logo
         brand: {
-          primary: '#1a1a1a', // Dark charcoal (professional gaming store aesthetic)
-          secondary: '#e63946', // Bold red accent (energy, excitement)
-          accent: '#f77f00', // Orange highlight (warmth, community)
-          dark: '#0d0d0d', // Near black
-          light: '#f8f9fa', // Off-white background
+          primary: '#25242C', // Deep charcoal gray (primary brand color)
+          secondary: '#B82F2F', // Dark crimson red (secondary brand accent)
+          accent: '#EF6725', // Vibrant orange (highlight and energy)
+          burgundy: '#972B32', // Deep burgundy (tertiary accent)
+          light: '#FEFFFD', // Off-white/cream (backgrounds, text on dark)
+          dark: '#25242C', // Alias for primary
           gray: {
             50: '#f9fafb',
             100: '#f3f4f6',
